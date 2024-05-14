@@ -37,3 +37,13 @@ def test_multiply_slow():
     time.sleep(5)
     result = my_functions.multiply(number_one=5, number_two=0)
     assert result == 0
+
+@pytest.mark.skip(reason="broken")
+def test_add():
+    result= my_functions.add(1,4)
+    assert result == 5
+
+@pytest.mark.xfail(reason="bug wip")
+def test_add_2():
+    result= my_functions.add(1,4)
+    assert result == 5
