@@ -4,7 +4,7 @@ import time
 
 def test_addition():
     result = my_functions.add(number_one=1, number_two=4)
-    assert result == 5
+    assert result == 50
 
 def test_add_strings():
     result = my_functions.add("J'aime les ", "tests")
