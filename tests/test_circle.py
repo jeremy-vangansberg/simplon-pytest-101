@@ -2,6 +2,8 @@ import pytest
 import source.shapes as shapes
 import math
 
+x=1
+
 class TestCircle:
     def setup_method(self):
         self.circle = shapes.Circle(10)
